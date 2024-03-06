@@ -1,0 +1,48 @@
+.section-top {
+  .menu {
+    height: 51px;
+    display: flex;
+    padding-inline: 460px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorFonOne;
+
+    a {
+      text-decoration: none;
+      @include fontSource(14px, 26px, 700, 0.025em);
+      text-transform: uppercase;
+      color: $colorContentOne;
+    }
+  }
+  .view-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 230px;
+    height: 148px;
+    background-color: #f8f3f4;
+    .chapter-name {
+      @include fontSource(24px, 20px, 900, 0.025em);
+      text-transform: uppercase;
+      color: #f16d7f;
+    }
+    .navigation-path {
+      a {
+        text-decoration: none;
+        .link-of-nav {
+          @include fontSource(14px, 20px, 300, 0.025em);
+          text-transform: uppercase;
+          color: #636363;
+          transition: 0.3s;
+          &:hover {
+            color: $colorContentTwo;
+          }
+        }
+        .last {
+          @include fontSource(14px, 20px, 700, 0.025em);
+          color: $colorContentTwo;
+        }
+      }
+    }
+  }
+}

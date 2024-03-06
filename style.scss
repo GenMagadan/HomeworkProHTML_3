@@ -1,0 +1,273 @@
+@import 'SCSS/mixins';
+@import 'SCSS/colors';
+@import 'SCSS/fonts';
+@import 'SCSS/header';
+@import 'SCSS/section-top';
+@import 'SCSS/sectionSubscribe';
+@import 'SCSS/section-info';
+@import 'SCSS/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1600px;
+  margin: auto;
+  background-color: gray;
+}
+
+.section-center {
+  .model-product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1600px;
+    height: 777px;
+    background-color: #f7f7f7;
+    border-block: 1px solid $colorFonThree;
+    &__arrow {
+      width: 47px;
+      height: 47px;
+      background-color: rgba(42, 42, 42, 0.14);
+      @include centerFlex;
+      &:hover {
+        background-color: #5e5e5e;
+        cursor: pointer;
+      }
+    }
+    &__model {
+      margin-bottom: 16px;
+    }
+  }
+  .offers-product {
+    height: 1289px;
+    background-color: $colorFonOne;
+    padding-inline: 230px;
+    padding-bottom: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    gap: 72px;
+    &__text {
+      @include fontSource(24px, 20px, 900, 0.025em);
+      text-transform: uppercase;
+      color: #4d4d4d;
+    }
+    &__foto {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      &__variants {
+        position: relative;
+        width: 261px;
+        height: 364px;
+        background-color: #ffffff;
+        display: flex;
+        gap: 17px;
+        flex-direction: column;
+        .card-link {
+          height: 100%;
+          width: 261px;
+          display: block;
+          text-decoration: none;
+          .box-foto {
+            width: 261px;
+            height: 280px;
+            background-color: #efefef;
+            @include centerFlex;
+          }
+          .card-text {
+            padding: 14px 17px;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            .variant-name {
+              @include fontSource(14px, 1.2, 600, 0.025em);
+              text-transform: uppercase;
+              color: #6f6e6e;
+            }
+            .variant-price {
+              @include fontSource(16px, 1.2, 700, 0.025em);
+              text-transform: uppercase;
+              color: $colorContentTwo;
+            }
+          }
+        }
+        .add-box {
+          position: absolute;
+          top: 98px;
+          display: none;
+          justify-content: center;
+          width: 100%;
+          pointer-events: none;
+          .add {
+            display: flex;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 10px;
+            align-items: center;
+            pointer-events: all;
+            .add-txt {
+              font-family: Lato;
+              font-size: 13px;
+              line-height: 1.2;
+              font-weight: 700;
+              color: #ffffff;
+            }
+            .add:hover {
+              box-shadow: 0 0 10px 0 #fff;
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+        }
+        &:hover .box-foto {
+          filter: brightness(30%);
+        }
+        &:hover .add-box {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.choice-options {
+  position: absolute;
+  top: 691px;
+  left: 229px;
+  width: 1141px;
+  height: 730px;
+  @include centerFlex;
+  flex-direction: column;
+  gap: 43px;
+  background-color: $colorFonOne;
+  border: 1px solid #eaeaea;
+  .description-model {
+    @include centerFlex;
+    flex-direction: column;
+    padding-inline: 260px;
+    &__name-collection {
+      @include fontSource(14px, 24px, 700, 0.025em);
+      color: $colorContentTwo;
+      padding-bottom: 14px;
+    }
+    .red-border {
+      width: 147px;
+      height: 1px;
+      background-color: $colorContentTwo;
+      border: 1px solid #eaeaea;
+      @include centerFlex;
+      .border-collection {
+        width: 63px;
+        height: 3px;
+        background-color: $colorContentTwo;
+      }
+    }
+
+    &__tagline {
+      @include fontSource(18px, 24px, 900, 0.025em);
+      text-transform: uppercase;
+      color: #4d4d4d;
+      padding-block: 17px 67px;
+    }
+    &__text {
+      @include fontSource(14px, 24px, 500, 0.025em);
+      color: #5e5e5e;
+    }
+    &__options {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      p {
+        @include fontSource(14px, 24px, 700, 0.025em);
+        color: #b9b9b9;
+        padding-block: 28px 37px;
+        span {
+          color: #2f2f2f;
+        }
+      }
+    }
+    &__price {
+      @include fontSource(26px, 24px, 700, 0.025em);
+      color: #ef5b70;
+    }
+  }
+  .options-model {
+    border-top: 1px solid $colorContentTwo;
+    width: calc(100% - 520px);
+    @include centerFlex;
+    flex-direction: column;
+    gap: 28px;
+    padding-top: 63px;
+    &__selection {
+      display: flex;
+      gap: 53px;
+      .description-block {
+        @include fontSource(14px, 24px, 700, 0.025em);
+        color: #2f2f2f;
+      }
+      .select1,
+      .select2,
+      input {
+        width: 144px;
+        height: 35px;
+        background-color: $colorFonOne;
+        border: 1px solid #eaeaea;
+        @include fontSource(13px, 24px, 400, 0.025em);
+        color: #bcbcbc;
+        padding-left: 11px;
+        &:focus {
+          border: 1px solid #eaeaea;
+        }
+      }
+      .select1:focus,
+      .select2:focus,
+      input:focus {
+        outline: none;
+        box-shadow: 0px 0px 3px $colorContentTwo;
+        border: 1px solid $colorContentTwo;
+        border-radius: 0;
+      }
+
+      input::placeholder {
+        @include fontSource(13px, 24px, 400, 0.025em);
+        color: #bcbcbc;
+      }
+    }
+    &__button {
+      width: 537px;
+      height: 55px;
+      background-color: $colorFonOne;
+      border: 1px solid $colorContentTwo;
+      @include centerFlex;
+      gap: 15px;
+      img {
+        width: 26px;
+        height: 24px;
+        color: $colorContentTwo;
+      }
+      p {
+        @include fontSource(16px, 1.2, 700, 0.025em);
+        color: $colorContentTwo;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: $colorContentTwo;
+        p {
+          color: #ffffff;
+        }
+        img {
+          filter: brightness(0) saturate(100%) invert(98%) sepia(69%)
+            saturate(1%) hue-rotate(21deg) brightness(113%)
+            contrast(101%);
+        }
+      }
+    }
+  }
+}

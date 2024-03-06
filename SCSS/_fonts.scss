@@ -1,0 +1,15 @@
+@mixin fontSource($size: false, $lh: false, $fw: false, $ls: false) {
+  font-family: Lato, sans-serif;
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
