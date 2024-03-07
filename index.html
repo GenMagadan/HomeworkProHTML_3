@@ -10,7 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Page 2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Page 3</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -78,175 +82,424 @@
       </div>
     </section>
     <section class="section-center">
-      <div class="model-product">
-        <div class="model-product__arrow left">
-          <img src="./images/logo/arrow-left.png" alt="arrow" />
+      <div class="catalog">
+        <div class="catalog__menu">
+          <details open class="filter">
+            <summary>Category</summary>
+            <a href="#">Accessories</a>
+            <a href="#">Bags</a>
+            <a href="#">Denim</a>
+            <a href="#">Hoodies & Sweatshirts</a>
+            <a href="#">Jackets & Coats</a>
+            <a href="#">Pants</a>
+            <a href="#">Polos</a>
+            <a href="#">Shirts</a>
+            <a href="#">Shoes</a>
+            <a href="#">Shorts</a>
+            <a href="#">Sweaters & Knits</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Tanks</a>
+          </details>
+          <details class="filter">
+            <summary>BRAND</summary>
+            <a href="#">Accessories</a>
+            <a href="#">Bags</a>
+            <a href="#">Denim</a>
+            <a href="#">Hoodies & Sweatshirts</a>
+            <a href="#">Jackets & Coats</a>
+            <a href="#">Pants</a>
+            <a href="#">Polos</a>
+            <a href="#">Shirts</a>
+            <a href="#">Shoes</a>
+            <a href="#">Shorts</a>
+            <a href="#">Sweaters & Knits</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Tanks</a>
+          </details>
+          <details class="filter">
+            <summary>DESIGNER</summary>
+            <a href="#">Accessories</a>
+            <a href="#">Bags</a>
+            <a href="#">Denim</a>
+            <a href="#">Hoodies & Sweatshirts</a>
+            <a href="#">Jackets & Coats</a>
+            <a href="#">Pants</a>
+            <a href="#">Polos</a>
+            <a href="#">Shirts</a>
+            <a href="#">Shoes</a>
+            <a href="#">Shorts</a>
+            <a href="#">Sweaters & Knits</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Tanks</a>
+          </details>
         </div>
-        <img
-          class="model-product__model"
-          src="./images/foto/girl-on-chair.png"
-          alt="girl"
-        />
-        <div class="model-product__arrow right">
-          <img src="./images/logo/arrow-right.png" alt="arrow" />
-        </div>
-        <div class="choice-options">
-          <div class="description-model">
-            <h3 class="description-model__name-collection">
-              WOMEN COLLECTION
-            </h3>
-            <div class="red-border">
-              <div class="border-collection"></div>
+        <div class="catalog__content">
+          <div class="selection-filter">
+            <div class="selection-filter_box box-terding">
+              <h4 class="selection-name">Trending now</h4>
+              <div class="fabric-color">
+                <p>Bohemian |</p>
+                <p>Floral |</p>
+                <p>Lace</p>
+                <p>Floral |</p>
+                <p>Lace |</p>
+                <p>Bohemian</p>
+              </div>
             </div>
-            <h2 class="description-model__tagline">
-              Moschino Cheap And Chic
-            </h2>
-            <p class="description-model__text">
-              Compellingly actualize fully researched processes before
-              proactive outsourcing. Progressively syndicate
-              collaborative architectures before cutting-edge
-              services. Completely visualize parallel core
-              competencies rather than exceptional portals.
-            </p>
-            <div class="description-model__options">
-              <p>MATERIAL: <span> COTTON</span></p>
-              <p>DESIGNER: <span> BINBURHAN</span></p>
+            <div class="selection-filter_box box-size">
+              <h4 class="selection-name">Size</h4>
+              <div class="chekboxs-size">
+                <div class="checkbox">
+                  <input type="checkbox" name="xxs" id="xxs" />
+                  <label for="xxs">XXS</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="xs" id="xs" />
+                  <label for="xs">XS</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="s" id="s" />
+                  <label for="s">S</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="m" id="m" />
+                  <label for="m">M</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="l" id="l" />
+                  <label for="l">L</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="xl" id="xl" />
+                  <label for="xl">XL</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="xxl" id="xxl" />
+                  <label for="xxl">XXL</label>
+                </div>
+              </div>
             </div>
-            <h1 class="description-model__price">$561</h1>
+            <div class="selection-filter_box box-price">
+              <h4 class="selection-name">Price</h4>
+              <div class="range">
+                <input
+                  type="range"
+                  id="price"
+                  name="price"
+                  min="0"
+                  max="1000"
+                />
+                <div class="range-number">
+                  <p>$52</p>
+                  <p>$400</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="options-model">
-            <div class="options-model__selection">
-              <div class="options-model__selection-color">
-                <h3 class="description-block">CHOOSE COLOR</h3>
-                <select class="select1">
-                  <option value="red">Red</option>
-                  <option value="blue">Blue</option>
-                  <option value="green">Green</option>
-                  <option value="gold">Gold</option>
-                </select>
-              </div>
-              <div class="options-model__selection-size">
-                <h3 class="description-block">CHOOSE SIZE</h3>
-                <select class="select2">
-                  <option value="xxl">XXL</option>
-                  <option value="xl">XL</option>
-                  <option value="l">L</option>
-                  <option value="m">M</option>
-                  <option value="s">S</option>
-                  <option value="xs">XS</option>
-                </select>
-              </div>
-              <div class="options-model__selection-quantity">
-                <h3 class="description-block">QUANTITY</h3>
-                <input type="number" min="1" placeholder="2" />
+          <div class="sort-show">
+            <div class="sort-show_item sort">
+              <div class="sort-show_item-name">Sort By</div>
+              <select name="" class="select-sort">
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+              </select>
+            </div>
+            <div class="sort-show_item show">
+              <div class="sort-show_item-name">Show</div>
+              <select name="" class="select-show">
+                <option value="six-element">6</option>
+                <option value="nine-element">9</option>
+                <option value="twelve-element">12</option>
+              </select>
+            </div>
+          </div>
+          <div class="foto-product">
+            <div class="foto-product__variants variant-one">
+              <a href="11111" class="card-link">
+                <img src="./images/foto/jacket-hood.png" alt="guy" />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
               </div>
             </div>
-            <div class="options-model__button">
-              <img src="./images/logo/cart-red.png" alt="cart" />
-              <p>Add to Cart</p>
+            <div class="foto-product__variants variant-two">
+              <a href="11111" class="card-link">
+                <img src="./images/foto/short-coat.png" alt="guy" />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+            <div class="foto-product__variants variant-three">
+              <a href="1111111" class="card-link">
+                <img src="./images/foto/guyBackpack.png" alt="guy" />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+            <div class="foto-product__variants variant-four">
+              <a href="1111111" class="card-link">
+                <img
+                  src="./images/foto/gray-speckled-shirt.png"
+                  alt="guy"
+                />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+            <div class="foto-product__variants variant-five">
+              <a href="1111111" class="card-link">
+                <img
+                  src="./images/foto/guyStripedHoodie.png"
+                  alt="guy"
+                />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+            <div class="foto-product__variants variant-six">
+              <a href="1111111" class="card-link">
+                <img
+                  src="./images/foto/student-jacket.png"
+                  alt="guy"
+                />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+            <div class="foto-product__variants variant-seven">
+              <a href="1111111" class="card-link">
+                <img
+                  src="./images/foto/guyStupidPanama.png"
+                  alt="guy"
+                />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+            <div class="foto-product__variants variant-eight">
+              <a href="1111111" class="card-link">
+                <img
+                  src="./images/foto/long-down-jacket.png"
+                  alt="guy"
+                />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+            <div class="foto-product__variants variant-nine">
+              <a href="1111111" class="card-link">
+                <img src="./images/foto/lilac-shirt.png" alt="guy" />
+                <div class="card-text">
+                  <p class="variant-name">Mango People T-shirt</p>
+                  <p class="variant-price">$ 52.00</p>
+                </div>
+              </a>
+              <div class="add-box">
+                <a href="22222" class="add-card">
+                  <img
+                    src="./images/logo/cart-add.svg"
+                    alt="cart"
+                    class="cart"
+                  />
+                  <p class="add-txt">Add to Cart</p>
+                </a>
+                <a href="33333" class="add-change">
+                  <img src="./images/logo/change.png" alt="change" />
+                </a>
+                <a href="44444" class="add-like">
+                  <img src="./images/logo/heart.png" alt="heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="switch">
+            <div class="numbers-page">
+              <button class="btn-page btn-left" type="submit">
+                <img src="./images/logo/arrow-left.png" alt="" />
+              </button>
+              <div class="nam-page nam-active">1</div>
+              <div class="nam-page">2</div>
+              <div class="nam-page">3</div>
+              <div class="nam-page">4</div>
+              <div class="nam-page">5</div>
+              <div class="nam-page">6....20</div>
+              <button class="btn-page btn-right" type="submit">
+                <img src="./images/logo/arrow-right.png" alt="" />
+              </button>
+            </div>
+            <div class="view-all">
+              <p>View All</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="offers-product">
-        <h1 class="offers-product__text">You may like also</h1>
-        <div class="offers-product__foto">
-          <div class="offers-product__foto__variants variant-one">
-            <a href="1111111" class="card-link">
-              <div class="box-foto">
-                <img
-                  src="./images/foto/blaze-leggins.png"
-                  alt="girl"
-                />
-              </div>
-              <div class="card-text">
-                <p class="variant-name">BLAZE LEGGINGS</p>
-                <p class="variant-price">$ 52.00</p>
-              </div>
-            </a>
-            <div class="add-box">
-              <a href="222222" class="add">
-                <img
-                  src="./images/logo/cart-add.svg"
-                  alt="cart"
-                  class="cart"
-                />
-                <p class="add-txt">Add to Cart</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="offers-product__foto__variants variant-two">
-            <a href="1111111" class="card-link">
-              <div class="box-foto">
-                <img
-                  src="./images/foto/alexa-sweater.png"
-                  alt="girl"
-                />
-              </div>
-              <div class="card-text">
-                <p class="variant-name">ALEXA SWEATER</p>
-                <p class="variant-price">$ 52.00</p>
-              </div>
-            </a>
-            <div class="add-box">
-              <a href="222222" class="add">
-                <img
-                  src="./images/logo/cart-add.svg"
-                  alt="cart"
-                  class="cart"
-                />
-                <p class="add-txt">Add to Cart</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="offers-product__foto__variants variant-three">
-            <a href="1111111" class="card-link">
-              <div class="box-foto">
-                <img src="./images/foto/agnes-top.png" alt="girl" />
-              </div>
-              <div class="card-text">
-                <p class="variant-name">AGNES TOP</p>
-                <p class="variant-price">$ 52.00</p>
-              </div>
-            </a>
-            <div class="add-box">
-              <a href="222222" class="add">
-                <img
-                  src="./images/logo/cart-add.svg"
-                  alt="cart"
-                  class="cart"
-                />
-                <p class="add-txt">Add to Cart</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="offers-product__foto__variants variant-four">
-            <a href="1111111" class="card-link">
-              <div class="box-foto">
-                <img
-                  src="./images/foto/silva-sweater.png"
-                  alt="girl"
-                />
-              </div>
-              <div class="card-text">
-                <p class="variant-name">AGNES TOP</p>
-                <p class="variant-price">$ 52.00</p>
-              </div>
-            </a>
-            <div class="add-box">
-              <a href="222222" class="add">
-                <img
-                  src="./images/logo/cart-add.svg"
-                  alt="cart"
-                  class="cart"
-                />
-                <p class="add-txt">Add to Cart</p>
-              </a>
-            </div>
-          </div>
+      <div class="sales">
+        <div class="offer delivery">
+          <img src="./images/logo/truck.png" alt="truck" />
+          <h4 class="offer-name">Free Delivery</h4>
+          <p class="offer-description">
+            Worldwide delivery on all. Authorit tively morph
+            next-generation innov tion with extensive models.
+          </p>
+        </div>
+        <div class="offer discounts">
+          <img src="./images/logo/interest.png" alt="interest" />
+          <h4 class="offer-name">Sales & discounts</h4>
+          <p class="offer-description">
+            Worldwide delivery on all. Authorit tively morph
+            next-generation innov tion with extensive models.
+          </p>
+        </div>
+        <div class="offer assurance">
+          <img src="./images/logo/crown.png" alt="crown" />
+          <h4 class="offer-name">Quality assurance</h4>
+          <p class="offer-description">
+            Worldwide delivery on all. Authorit tively morph
+            next-generation innov tion with extensive models.
+          </p>
         </div>
       </div>
     </section>
